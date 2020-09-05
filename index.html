@@ -1,0 +1,516 @@
+<!-- Main navigation -->
+    <!DOCTYPE html>
+    <html>
+    <head> 
+        <title>Naviyaa Poonia</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
+
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"></script>
+    </head>
+    <body>
+        <style type="text/css">
+
+            /* Required for full background image */
+
+            html,
+            body,
+            header,
+            #intro-section {
+                height: 100%;
+            }
+
+            @media (max-width: 740px) {
+                html,
+                body,
+                header,
+                #intro-section {
+                    height: 100vh;
+                }
+            }
+
+            .top-nav-collapse, .page-footer {
+                background-color: #563e91 !important;
+            }
+
+            .navbar:not(.top-nav-collapse) {
+                background: transparent !important;
+            }
+
+            @media (max-width: 991px) {
+                .navbar:not(.top-nav-collapse) {
+                    background: #563e91 !important;
+                }
+            }
+
+            .rgba-gradient {
+                background: rgba(35, 7, 77, 0.6);
+                /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, rgba(204, 83, 51, 0.6), rgba(35, 7, 77, 0.6));
+                /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, rgba(204, 83, 51, 0.6), rgba(35, 7, 77, 0.6));
+                /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            }
+
+
+            .img-gradient:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                display: inline-block;
+                /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(220, 66, 37, 0.5)), color-stop(100%, rgba(0, 47, 75, 0.5)));
+                /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
+                /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
+                /* Opera 11.10+ */
+                /* IE10+ */
+                background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 47, 75, 0.5)), to(rgba(220, 66, 37, 0.5)));
+                background: linear-gradient(to bottom, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
+                /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000', GradientType=0);
+                /* IE6-9 */
+            }
+
+            img{ max-width:100%;}
+
+.gallery_box li{ width:33.333333%; max-width: 100% ; display:inline-block; float: left; text-align: center; overflow: hidden;    position: relative;}
+.gallery_box{ padding:0;display: flow-root;}
+
+.gallery_box li:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.gallery_box li img{-webkit-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+    transition: transform 0.5s ease;}
+.gallery_box li:nth-child(even) {
+    height: 304px;
+}
+.gallery_box li:nth-child(odd) {
+    height: 438px; 
+}
+.gallery_box li:nth-child(odd) .box_data{ background:rgba(0,0,0,0.17) }
+.gallery_box li:nth-child(even) .box_data{ background:rgba(0,44,255,0.27) }
+.gallery_box .box_data{ position:absolute; top: 0; left: 0; right:0; bottom:0; color:#fff;}
+.gallery_box .box_data span{ position:absolute; top: 50%; transform: translateY(-50%); left:0 ; right:0; font-size:24px;}
+.gallery_box li:hover .box_data{ background:rgba(255,0,39,0.55)}
+
+        </style>
+        <header>
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto smooth-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#intro">Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" data-offset="90">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects" data-offset="90">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tech" data-offset="90">Technologies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" data-offset="90">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- Social Icon  -->
+                    <!--<div class="navber-nav text-white">
+                        Made with Love in Scaler Academy.
+                    </div>-->
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar -->
+        <!-- Full Page Intro -->
+        <div id="intro-section" class="view">
+            <video class="video-intro" poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" playsinline
+            autoplay muted loop>
+            <source src="https://mdbootstrap.com/img/video/animation.mp4" type="video/mp4">
+            </video>
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+                <!-- Content -->
+                <div class="container px-md-3 px-sm-0">
+                    <!--Grid row-->
+                    <div class="row wow fadeIn">
+                        <!--Grid column-->
+                        <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
+                            <h3 class="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5" id="intro">Naviyaa Poonia</h3>
+                            <hr class="hr-light my-4 w-75">
+                            <h4 class="subtext-header mt-2 mb-4">Hi, I am a programmer.</h4>
+                            <a href="#projects" class="btn btn-rounded btn-outline-white">
+                                <i class="fa fa-home"></i> Checkout my projects
+                            </a>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </div>
+                <!-- Content -->
+            </div>
+            <!-- Mask & flexbox options-->
+        </div>
+        <!-- Full Page Intro -->
+    </header>
+
+    <!--Main layout-->
+    <main>
+
+        <!--Section: about-->
+        <section id="about" class="py-5">
+
+            <!-- Container -->
+            <div class="container">
+                <!-- Section heading -->
+                <h2 class="h1-responsive font-weight-bold text-center mb-5">About Me</h2>
+                <!-- Section description -->
+                <p class="lead grey-text text-center w-responsive mx-auto mb-5">I'm currently doing my B.Tech from VIT Chennai.</p>
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-lg-5 row text-center text-lg-left">
+                        <img class="img-fluid" src="./assets/images/books-1.jpg" alt="Sample image">
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-7">
+
+                        <!-- Grid row -->
+                        <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-1">
+                                <i class="fa fa-mail-forward fa-lg purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xl-10 col-md-11 col-10">
+                                <h5 class="font-weight-bold mb-3">An avid book reader</h5>
+                                <p class="grey-text">If I'm not coding, you'll definitely find me curled up with a good book and a cup of coffee. My favorite genres consists of 'Thriller', 'Mystery', and 'Classic'.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+
+                        <!-- Grid row -->
+                        <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-1">
+                                <i class="fa fa-mail-forward fa-lg purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xl-10 col-md-11 col-10">
+                                <h5 class="font-weight-bold mb-3">Cyber Security</h5>
+                                <p class="grey-text">One of the topics I find extremely interesting and look forward to study in the near future.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-1">
+                                <i class="fa fa-mail-forward fa-lg purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xl-10 col-md-11 col-10">
+                                <h5 class="font-weight-bold mb-3">Math and Logic</h5>
+                                <p class="grey-text mb-0">I love dealing with numbers and problems involving logical thinking. One of the reasongs I like problem solving in coding.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!--Grid row-->
+                        <br>
+                        <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-1">
+                                <i class="fa fa-mail-forward fa-lg purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xl-10 col-md-11 col-10">
+                                <h5 class="font-weight-bold mb-3">Scenic Photography</h5>
+                                <p class="grey-text mb-0">I love clicking pictures of the nature whenever I am outdoors and get the chance to do so.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+            <!-- Container -->
+
+        </section>
+        <!--Section: about-->
+
+        <!--Section: projects-->
+        <section id="projects" class="text-center py-5" style="background-color: #eee;">
+
+            <!-- Container -->
+            <div class="container">
+
+                <!-- Section heading -->
+                <h2 class="h1-responsive font-weight-bold mb-5">Projects I have worked on...</h2>
+                <!-- Section description -->
+                <p class="grey-text w-responsive mx-auto mb-5">The projects I have worked on till now.</p>
+
+                <!-- Grid row -->
+                <div class="row text-center">
+
+                    <!-- Grid column -->
+                    <div class="col-lg-6 col-md-12 mb-lg-0 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay rounded z-depth-1">
+                            <img src="./assets/images/event.png" class="img-fluid" alt="Sample project image">
+                            <a>
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <!--Excerpt-->
+                        <div class="card-body pb-0">
+                            <h4 class="font-weight-bold my-3">An 'Event Planning Database System'.</h4>
+                            <p class="grey-text">Web development - Consists of front-end webpage and back-end administration part of database.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-6 col-md-6 mb-md-0 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay rounded z-depth-1">
+                            <img src="./assets/images/web.png" class="img-fluid" alt="Sample project image">
+                            <a>
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <!--Excerpt-->
+                        <div class="card-body pb-0">
+                            <h4 class="font-weight-bold my-3">Web Designing</h4>
+                            <p class="grey-text">The first website which I designed officially.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+            <!-- Container -->
+
+        </section>
+        <!--Section: projects-->
+
+        <!--Section: gallery-->
+        <section id="tech" class="text-center py-5">
+
+            <!-- Container -->
+            <div class="container">
+
+                <!-- Section heading -->
+                <h2 class="h1-responsive font-weight-bold mb-5">Technologies I have worked on</h2>
+                <!-- Section description -->
+                <p class="grey-text w-responsive mx-auto mb-5">The different languages I have worked with till now.</p>
+    <div class="container-fluid">
+      <div class="row my-5">
+        <div class="col container">
+          <img src="https://img.icons8.com/color/96/000000/html-5.png" height="100px" alt="HTML 5">
+          <div class="overlay">
+            <div class="text"><p style="font-family: 'Baloo Bhai 2', cursive;">HTML5</p></div>
+          </div>
+        </div>
+        <div class="col container">
+          <img src="https://img.icons8.com/color/96/000000/javascript.png" height="100px" alt="Javascript">
+          <div class="overlay">
+            <div class="text"><p style="font-family: 'Baloo Bhai 2', cursive;">Javascript</p></div>
+          </div>
+        </div>
+       <div class="col container">
+          <img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-opencode-css-8.png" height="100px" alt="CSS 3">
+          <div class="overlay">
+            <div class="text"><p style="font-family: 'Baloo Bhai 2', cursive;">CSS3</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-5">
+        <div class="col container">
+          <img src="https://img.icons8.com/color/96/000000/bootstrap.png" height="100px" alt="Bootstrap">
+          <div class="overlay">
+            <div class="text"><p style="font-family: 'Baloo Bhai 2', cursive;">Bootstrap</p></div>
+          </div>
+        </div>
+        <div class="col container">
+          <img src="https://img.icons8.com/ios-filled/100/000000/mysql-logo.png" height="100px" alt="MySql">
+          <div class="overlay">
+            <div class="text"><p style="font-family: 'Baloo Bhai 2', cursive;">MySql</p></div>
+          </div>
+        </div>
+      <div class="col container">
+          <img src="https://img.icons8.com/color/96/000000/php-logo.png" height="96px" alt="PHP">
+          <div class="overlay">
+            <div class="text"><p style="font-family: 'Baloo Bhai 2', cursive;">PHP</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-5">
+        <div class="col container">
+          <img src="https://img.icons8.com/color/96/000000/python.png" height="100px" alt="Python2">
+          <div class="overlay">
+            <div class="text"><p style="font-family: 'Baloo Bhai 2', cursive;">Python2</p></div>
+          </div>
+        </div>
+        <div class="col container">
+          <img src="https://img.icons8.com/color/96/000000/c-plus-plus-logo.png" height="100px" alt="C++">
+          <div class="overlay">
+            <div class="text"><p style="font-family: 'Baloo Bhai 2', cursive;">C++</p></div>
+          </div>
+        </div>
+        <div class="col container">
+          <img src="https://cdn.iconscout.com/icon/free/png-512/c-programming-569564.png" height="100px" alt="C language">
+          <div class="overlay">
+            <div class="text"><p style="font-family: 'Baloo Bhai 2', cursive;">C</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</section>
+<!--Section: tech-->
+
+<!--Section: call to action-->
+<div class="streak streak-md streak-photo" style="background-image:url('https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img(115).jpg')">
+    <div class="flex-center rgba-black-light pattern-1">
+        <div class="white-text smooth-scroll mx-4">
+            <h2 class="h2-responsive mb-5 wow fadeIn">
+                I am a self motivated Person who is ready to jump into the industry to learn new things and contribute for the organisation.                
+            </h2>
+            <div class="text-center">
+                <a href="#contact" class="btn btn-outline-white wow fadeIn " data-offset="100" data-wow-delay="0.2s">Contact
+                me</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Section: call to action-->
+
+<!--Section: contact-->
+<section id="contact" class="py-5" style="background-color: #eee;">
+
+    <div class="container">
+
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold text-center mb-5">Contact Me </h2>
+        <!-- Section description -->
+
+        <!-- Grid row -->
+         <div class="text-center" style="align:center;">
+                <ul class="list-unstyled list-inline text-center">
+                    <li class="list-inline-item">
+                        <i class="fa fa-map-marker fa-2x purple-text"></i>
+                        <p>VIT Chennai</p>
+                    </li>&emsp;&emsp;
+                    <li class="list-inline-item">
+                        <i class="fa fa-phone fa-2x mt-4 purple-text"></i>
+                        <p>+91 7400391674</p>
+                    </li>&emsp;&emsp;
+                    <li class="list-inline-item">
+                        <i class="fa fa-envelope fa-2x mt-4 purple-text"></i>
+                        <p>poonia.naviyaa@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+
+</section>
+<!--Section: contact-->
+
+</main>
+<!--Main layout-->
+
+<!-- Footer -->
+<footer class="page-footer font-small pt-2">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+                <a class="btn-floating btn-gplus mx-1" href="" target="_blank">
+                    <i class="fab fa-google-plus"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-li mx-1" href="" target="_blank">
+                    <i class="fab fa-linkedin"> </i>
+                </a>
+            </li>
+        </ul>
+        <!-- Social buttons -->
+
+    </div>
+     
+</footer>
+<!-- Footer -->
+</body>
+</html>
+
+
